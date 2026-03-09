@@ -1,7 +1,15 @@
-const footerBasePath = window.location.pathname.includes("/pages/") ? "../" : "";
+const repoName = "Demo_Dream_Works";
 
-fetch(footerBasePath + "pages/footer.html")
-.then(response => response.text())
+const basePath = window.location.hostname.includes("github.io")
+  ? `/${repoName}/`
+  : "/";
+
+const pagePath = window.location.pathname.includes("/pages/")
+  ? "../"
+  : "";
+
+fetch(basePath + pagePath + "pages/footer.html")
+.then(res => res.text())
 .then(data => {
-document.getElementById("footer").innerHTML = data;
+  document.getElementById("footer").innerHTML = data;
 });
