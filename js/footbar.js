@@ -1,7 +1,7 @@
-const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
+const footerBasePath = window.location.pathname.includes("/pages/") ? "../" : "";
 
-fetch(basePath + "pages/footer.html")
-.then(res => res.text())
+fetch(footerBasePath + "pages/footer.html")
+.then(response => response.text())
 .then(data => {
 document.getElementById("footer").innerHTML = data;
 });
