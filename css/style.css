@@ -49,20 +49,40 @@ max-width:1200px;
 margin:0 auto;
 width:100%;
 padding:0 20px;
+ 
 }
 
 /* Navigation links */
 .nav-links{
     list-style:none;
     display:flex;
+    font-size:19px;
     gap:25px;
     margin:0;
     padding:0;
+}
+.nav-links li{
+display:flex;
+align-items:center;
 }
 
 .nav-links a{
     color:rgb(0, 0, 0);
     text-decoration:none;
+}
+
+.nav-links .contact-btn{
+background:#1f86c7;
+color:#fff;
+padding:10px 22px;
+border-radius:5px;
+text-decoration:none;
+display:inline-block;
+font-weight:500;
+}
+
+.nav-links .contact-btn:hover{
+background:#166aa1;
 }
 
 /* Hero Section */
@@ -98,6 +118,86 @@ padding:0 20px;
 .hero h1{
     font-size:40px;
 }
+.page-banner{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 26px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
+.banner-container{
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
+padding-left:300px;
+width:100%;
+}
+
+.page-banner-objective{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital2.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
+.page-banner-resources{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital5.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
+
+.page-banner-corevalues{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital3.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
+.page-banner-contact{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital3.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+
+}
+
+
+.mission-hero{
+     background: #f2f4f7;
+}
 .mission-hero p{
     text-align:left;
     font-size:19px;
@@ -132,6 +232,7 @@ padding:0 20px;
     text-align:center;
     color:#555;
     padding-left:20px;
+    
 }
 
 .strategy-list li{
@@ -143,17 +244,16 @@ padding:0 20px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
+.overview-hero{
+  background:#e8f3ff; 
+}
 
 /* Objectives Section */
 .objectives-hero{
     padding:80px 20px;
+     background:#e8f3ff; 
 }
 
-.objectives-hero h1{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:30px;
-}
 
 .objectives-list{
     max-width:900px;
@@ -169,12 +269,6 @@ padding:0 20px;
 }
 .resources-hero{
     padding:80px 20px;
-}
-
-.resources-hero h1{
-    text-align:center;
-    font-size:40px;
-    margin-bottom:40px;
 }
 
 .resources-hero h2{
@@ -238,11 +332,14 @@ padding:0 20px;
 }
 
 .team-card img{
-    width:100%;
-    height:250px;
+    width:180px;
+    height:180px;
     object-fit:cover;
+    border-radius:50%;
+    margin:20px auto 10px;
+    display:block;
+    border:4px solid #f0f0f0;
 }
-
 .team-info{
     padding:15px;
 }
@@ -524,12 +621,13 @@ flex:2;
 margin-bottom:30px;
 color:#555;
 line-height:1.7;
+font-size:18px; 
 }
 
 .contact-form label{
 display:block;
 margin-top:20px;
-font-size:14px;
+font-size:16px;
 }
 
 .contact-form input,
@@ -578,18 +676,24 @@ color:#444;
 .contact-info p{
 margin-top:5px;
 color:#666;
-font-size:14px;
+font-size:16px;
+
 }
 
 .contact-info i{
 margin-right:6px;
 color:#1f86c7;
+
 }
 .contact-info a{
 margin-right:6px;
+text-decoration:none;
 color:#000407;
+line-height:1.8;
 
 }
+.contact-info a:hover{
+text-decoration:underline;   }
 
 .social-links{
 list-style:none;
@@ -598,7 +702,7 @@ margin-top:5px;
 }
 
 .social-links li{
-font-size:14px;
+font-size:16px;
 margin-top:6px;
 color:#444;
 }
@@ -652,6 +756,7 @@ border:0;
     height:100%;
     object-fit:cover;
     pointer-events:none;
+    transition: transform 0.6s ease;
 }
 /* TEXT BOX */
 
@@ -669,7 +774,9 @@ border:0;
     transform:translateY(20px);
     transition:0.4s;
 }
-
+.slide.active:hover img{
+    transform: scale(1.08);
+}
 /* show when hovering the visible slide */
 .slide.active:hover .slide-content{
     opacity:1;
@@ -706,3 +813,39 @@ border:0;
 
 .prev{ left:10px; }
 .next{ right:10px; }
+
+.gallery-section{
+padding:80px 20px;
+text-align:center;
+}
+
+.gallery-title{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.gallery-container{
+max-width:1200px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+}
+
+.gallery-container img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:4px;
+transition:transform 0.3s ease;
+}
+
+.gallery-container img:hover{
+transform:scale(1.05);
+}
+
+.gallery-item{
+overflow:hidden;
+border-radius:4px;
+}
