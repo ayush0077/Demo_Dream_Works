@@ -11,16 +11,20 @@ body{
     text-decoration:none;
 }
 .logo img{
-height:110px;
-width:auto;
-display:block;
+height:100px;
+transition:transform 0.3s ease;
+}
+
+.logo img:hover{
+transform:scale(1.05);
 }
 
 /* Navbar */
 
 .navbar{
 height:120px;
-background:#f4f4f4;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(8px);
 display:flex;
 align-items:center;
 width:100%;
@@ -29,7 +33,7 @@ position:fixed;
 top:0;
 left:0;
 transition:all 0.3s ease;
-
+border-bottom:1px solid rgba(0,0,0,0.05);
 }
 .navbar.shrink{
 height:80px;
@@ -67,8 +71,30 @@ align-items:center;
 }
 
 .nav-links a{
-    color:rgb(0, 0, 0);
-    text-decoration:none;
+color:#222;
+text-decoration:none;
+position:relative;
+font-weight:500;
+transition:color 0.3s ease;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:2px;
+background:#1f86c7;
+transition:width 0.3s ease;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.nav-links a:hover{
+color:#1f86c7;
 }
 
 .nav-links .contact-btn{
@@ -446,8 +472,230 @@ margin-top:0px;
     font-weight:bold;
     color:#f7f0f0;
 }
+/* Consulting Services Section */
+/* CONSULTING + WORKING AREAS SECTIONS */
+.consulting-services,
+.working-areas{
+    padding:90px 40px;
+    text-align:center;
+}
 
-/* Footer */
+.consulting-services{
+    background:#f5f7fa;
+}
+
+.consulting-services h1,
+.working-areas h1{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+/* CONTAINER */
+.service-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin:40px auto 0;
+    gap:30px;
+}
+
+/* CARD */
+.service-card{
+    position:relative;
+    overflow:hidden;
+
+    color:white;
+    text-align:left;
+    padding:35px;
+
+    flex:1 1 300px;
+    max-width:320px;
+    min-height:360px;
+
+    border-radius:14px;
+    box-shadow:0 12px 28px rgba(0,0,0,0.18);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    transition:transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* IMAGE LAYER */
+.service-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+    transition:transform 0.7s ease;
+    z-index:0;
+}
+
+/* GRADIENT OVERLAY */
+.service-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.85) 10%,
+        rgba(0,0,0,0.55) 45%,
+        rgba(0,0,0,0.2) 80%
+    );
+    z-index:1;
+}
+
+/* TEXT ABOVE OVERLAY */
+.service-card h3,
+.service-card ul{
+    position:relative;
+    z-index:2;
+}
+
+/* TITLE */
+.service-card h3{
+    margin-bottom:18px;
+    font-size:20px;
+    font-weight:600;
+    border-left:4px solid #4da6ff;
+    padding-left:12px;
+}
+
+/* LIST */
+.service-card ul{
+    padding-left:20px;
+}
+
+.service-card li{
+    margin-bottom:10px;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* HOVER */
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 22px 45px rgba(0,0,0,0.28);
+}
+
+.service-card:hover::before{
+    transform:scale(1.12);
+}
+
+/* CONSULTING IMAGES */
+.service-card.planning::before{
+    background-image:url("../images/resdential/CHANDAGIRI.jpg");
+}
+
+.service-card.engineering::before{
+    background-image:url("../images/resdential/DHAPAKHEL-28.jpg");
+}
+
+.service-card.survey::before{
+    background-image:url("../images/resdential/KIRTIPUR\,\ WARD-2.jpg");
+}
+
+/* WORKING AREAS IMAGES */
+.service-card.mechanical::before{
+    background-image:url("../images/Interior/sainama.jpg");
+}
+
+.service-card.environment::before{
+    background-image:url("../images/APPARTMENT/HATIIBAN.jpg");
+}
+
+.service-card.engineering1::before{
+    background-image:url("../images/resdential/BUDHANILKHANTHA-4.jpg");
+}
+
+.project-container{
+max-width:1200px;
+margin:40px auto;
+display:block; /* stack items */
+}
+
+.project-card-1{
+width:100%;
+height:320px;
+margin-bottom:25px;
+position:relative;
+overflow:hidden;
+border-radius:14px;
+}
+.project-card-1::after{
+content:"";
+position:absolute;
+inset:0;
+
+background:rgba(29, 4, 4, 0.897); /* dim effect */
+
+opacity:0;
+transition:opacity 0.4s ease;
+}
+.project-card-1:hover::after{
+opacity:1;
+}
+.project-card-1 img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+transition: transform 0.5s ease;
+}
+.project-card-1:hover img{
+transform: scale(1.08);
+}
+.project-content-1{
+position:absolute;
+inset:0;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+opacity:0;
+transition:opacity 0.4s ease;
+
+z-index:2;
+text-decoration:none;
+}
+.project-card-1:hover .project-content-1{
+opacity:1;
+}
+.project-content-1 h3{
+font-family:'Playfair Display', serif;
+font-size:34px;
+font-weight:500;
+
+letter-spacing:2px;
+color:white;
+
+text-transform:uppercase;
+
+text-shadow:0 3px 10px rgba(0,0,0,0.6);
+
+transition:transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 .footer-container{
@@ -584,32 +832,35 @@ position:relative;
 position:absolute;
 top:100%;
 left:0;
-
-background:#e6e6f2;
-
+background:white;
 list-style:none;
 padding:10px 0;
-
-width:220px;
-
-display:none;
-}
-
-.dropdown-menu li{
-padding:10px 20px;
-}
-
-.dropdown-menu a{
-color: rgb(0, 0, 0);
-text-decoration:none;
-display:block;
+border-radius:6px;
+box-shadow:0 8px 25px rgba(0,0,0,0.12);
+opacity:0;
+visibility:hidden;
+transform:translateY(10px);
+transition:all 0.3s ease;
+min-width:200px;
 }
 
 .dropdown:hover .dropdown-menu{
+opacity:1;
+visibility:visible;
+transform:translateY(0);
+}
+
+.dropdown-menu li{
+padding:8px 18px;
+}
+
+.dropdown-menu a{
+color:#333;
 display:block;
 }
-.dropdown-menu li:hover{
-background:#d4d4e6;
+
+.dropdown-menu a:hover{
+background:#f5f7fa;
 }
 
 /* CONTACT SECTION */
