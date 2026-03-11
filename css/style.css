@@ -166,6 +166,7 @@ font-family: Georgia, serif;
 margin-top:0px;
 }
 
+
 .page-banner-corevalues{
 height:550px;
 background:
@@ -194,7 +195,19 @@ margin-top:0px;
 
 }
 
-
+.page-banner-resedential{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/resdential/BUDHANILKHANTHA-2.jpg") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
 .mission-hero{
      background: #f2f4f7;
 }
@@ -848,4 +861,124 @@ transform:scale(1.05);
 .gallery-item{
 overflow:hidden;
 border-radius:4px;
+}
+
+.projects-section{
+padding:80px 20px;
+}
+
+.projects-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card{
+position:relative;
+height:300px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+cursor:pointer;
+}
+
+.project-card img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform 0.8s ease;
+}
+
+.project-card:hover img{
+transform:scale(1.04);
+}
+
+
+/* OVERLAY */
+
+.project-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:rgba(0,0,0,0.5);
+opacity:0;
+transition:0.3s;
+
+pointer-events:none;
+}
+
+.project-card:hover .project-overlay{
+opacity:1;
+}
+
+
+/* OVERLAY CONTENT */
+
+/* OVERLAY CONTENT */
+
+.overlay-content{
+text-align:center;
+color:white;
+}
+
+.project-title{
+display:block;
+font-size:20px;
+font-weight:600;
+color:white;
+text-shadow:0 2px 6px rgba(0,0,0,0.7);
+margin-bottom:6px;
+}
+
+
+
+/* title */
+.project-modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+z-index:1000;
+
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+width:90%;
+max-width:1200px;
+display:flex;
+gap:40px;
+padding:30px;
+border-radius:10px;
+}
+
+.modal-left img{
+width:100%;
+max-width:700px;
+max-height:85vh;
+object-fit:contain;
+}
+.modal-left{
+flex:2;
+}
+
+.modal-right{
+flex:1;
 }

@@ -4,12 +4,17 @@ const basePath = window.location.hostname.includes("github.io")
   ? `/${repoName}/`
   : "/";
 
-const pagePath = window.location.pathname.includes("/pages/")
-  ? "../"
-  : "";
+let pagePath = "";
+
+if (window.location.pathname.includes("/pages/projects/")) {
+  pagePath = "../../";
+} 
+else if (window.location.pathname.includes("/pages/")) {
+  pagePath = "../";
+}
 
 fetch(basePath + pagePath + "pages/navbar.html")
-.then(res => res.text())
-.then(data => {
-  document.getElementById("navbar").innerHTML = data;
-});
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+  });
