@@ -147,7 +147,7 @@ background:#166aa1;
 .page-banner{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -168,7 +168,7 @@ width:100%;
 .page-banner-objective{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital2.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -181,7 +181,7 @@ margin-top:0px;
 .page-banner-resources{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital5.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -192,11 +192,18 @@ font-family: Georgia, serif;
 margin-top:0px;
 }
 
+.page-banner-resources h1{
+font-family:'Poppins', sans-serif;
+font-size:56px;
+font-weight:600;
+letter-spacing:1px;
+text-shadow:0 4px 12px rgba(0,0,0,0.5);
+}
 
 .page-banner-corevalues{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital3.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -209,7 +216,7 @@ margin-top:0px;
 .page-banner-contact{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/hospital3.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -224,7 +231,7 @@ margin-top:0px;
 .page-banner-resedential{
 height:550px;
 background:
-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/resdential/BUDHANILKHANTHA-2.jpg") center/cover no-repeat;
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
 display:flex;
 align-items:flex-end;
 justify-content:flex-start;
@@ -601,11 +608,11 @@ margin-top:0px;
 
 /* WORKING AREAS IMAGES */
 .service-card.mechanical::before{
-    background-image:url("../images/Interior/sainama.jpg");
+    background-image:url("../images/Interior/JANAKPUR.jpg");
 }
 
 .service-card.environment::before{
-    background-image:url("../images/APPARTMENT/HATIIBAN.jpg");
+    background-image:url("../images/APPARTMENT/LARGE/HATIIBAN.jpg");
 }
 
 .service-card.engineering1::before{
@@ -643,6 +650,7 @@ opacity:1;
 width:100%;
 height:100%;
 object-fit:cover;
+object-position:center;
 display:block;
 transition: transform 0.5s ease;
 }
