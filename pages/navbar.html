@@ -1,18 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dream Developers</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
 <header class="navbar">
 
 <div class="nav-container">
 
-<a href="/" class="logo">
-    <img src="/images/logo.png" alt="Dream Developers">
+<a href="/index.html" class="logo">
+<img src="/images/logo.png" alt="Dream Developers">
 </a>
 
+<!-- HAMBURGER -->
+<div class="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+
+<!-- NAVIGATION -->
 <ul class="nav-links">
 
 <li><a href="/">Home</a></li>
 
 <li class="dropdown">
 <a href="#">About ▾</a>
-
 
 <ul class="dropdown-menu">
 <li><a href="/pages/mission.html">Overview</a></li>
@@ -21,11 +44,10 @@
 <li><a href="/pages/resources.html">Resources</a></li>
 <li><a href="/pages/team.html">Team</a></li>
 </ul>
+</li>
 
-</li>
-<li>
-<a href="#services">Services</a>
-</li>
+<li><a href="#services">Services</a></li>
+
 <li class="dropdown">
 <a href="#">Projects ▾</a>
 
@@ -37,9 +59,7 @@
 <li><a href="/pages/projects/Hospital.html">Hospital</a></li>
 <li><a href="/pages/projects/Park & Landscape Design.html">Park & Landscape Design</a></li>
 <li><a href="/pages/projects/Residential_Projects.html">Residential Projects</a></li>
-
 </ul>
-
 </li>
 
 <li class="dropdown">
@@ -49,7 +69,6 @@
 <li><a href="/pages/gallery.html">Gallery</a></li>
 <li><a href="/documents/brochure.pdf" download>Brochure</a></li>
 </ul>
-
 </li>
 
 <li>
@@ -60,4 +79,14 @@
 
 </div>
 
+<!-- OVERLAY -->
+<div class="nav-overlay"></div>
+
 </header>
+
+
+<!-- JAVASCRIPT -->
+<script src="../js/mobile_menu.js"></script>
+
+</body>
+</html>
