@@ -1447,4 +1447,157 @@ gap:20px;
 .project-card{
 height:250px;
 }
+.team-container{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.team-card{
+width:100%;
+}
+
+.team-card img{
+width:120px;
+height:120px;
+}
+}
+/* HAMBURGER */
+/* HAMBURGER BUTTON */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+z-index:1001; /* make sure it stays above overlay */
+position:relative;
+}
+/* OVERLAY */
+.nav-container{
+position:relative;
+z-index:1001;
+}
+.nav-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+opacity:0;
+visibility:hidden;
+transition:0.3s;
+z-index:998;
+}
+
+.nav-overlay.active{
+opacity:1;
+visibility:visible;
+}
+
+/* show hamburger */
+/* MOBILE NAVBAR */
+@media (max-width:768px){
+
+/* show hamburger */
+.menu-toggle{
+display:block;
+font-size:28px;
+cursor:pointer;
+z-index:1001;
+}
+
+/* slide menu panel */
+.nav-links{
+position:fixed;
+top:0;
+right:-100%;
+
+height:100vh;
+width:270px;
+
+background:#ffffff;
+
+display:flex;
+flex-direction:column;
+
+padding:90px 25px 40px;
+
+gap:5px;
+
+box-shadow:-8px 0 25px rgba(0,0,0,0.15);
+
+transition:0.35s ease;
+
+z-index:999;
+overflow-y:auto;
+}
+
+/* when active */
+.nav-links.active{
+right:0;
+}
+
+/* nav items */
+.nav-links li{
+width:100%;
+list-style:none;
+}
+
+/* links */
+.nav-links a{
+display:block;
+width:100%;
+
+padding:12px 10px;
+
+font-size:17px;
+font-weight:500;
+
+color:#333;
+text-decoration:none;
+
+border-radius:6px;
+
+transition:0.2s;
+}
+
+/* hover effect */
+.nav-links a:hover{
+background:#f2f2f2;
+}
+
+/* dropdown container */
+.dropdown-menu{
+position:static;
+display:none;
+flex-direction:column;
+padding-left:15px;
+margin-top:5px;
+}
+
+/* show dropdown */
+.dropdown.active .dropdown-menu{
+display:flex;
+}
+
+/* dropdown links */
+.dropdown-menu a{
+font-size:15px;
+padding:10px;
+color:#555;
+}
+
+/* contact button */
+.contact-btn{
+background:#1e3a8a;
+color:#fff !important;
+text-align:center;
+margin-top:10px;
+border-radius:6px;
+}
+
+.contact-btn:hover{
+background:#162b63;
+}
+
 }
