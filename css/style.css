@@ -1,8 +1,28 @@
+/* SCROLL REVEAL EFFECT */
+
+.reveal{
+opacity:0;
+transform:translateY(80px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     padding-top:80px;
-    
+
+    background:
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.95)),
+    url("../images/background-pattern.jpg");
+font-family:Arial, Helvetica, sans-serif;
+    background-size:cover;
+    background-attachment:fixed;
 }
 .logo{
     color:white;
@@ -34,6 +54,7 @@ top:0;
 left:0;
 transition:all 0.3s ease;
 border-bottom:1px solid rgba(0,0,0,0.05);
+
 }
 .navbar.shrink{
 height:80px;
@@ -178,6 +199,47 @@ font-size: 24px;
 font-family: Georgia, serif;
 margin-top:0px;
 }
+.page-banner-objective h1{
+    font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
+
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
+
+    margin-bottom:40px;
+}
+.page-banner-overview{
+height:550px;
+background:
+linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url("../images/banner.png") center/cover no-repeat;
+display:flex;
+align-items:flex-end;
+justify-content:flex-start;
+text-align:left;
+color:white;
+font-size: 24px;
+font-family: Georgia, serif;
+margin-top:0px;
+}
+.page-banner-overview h1{
+    font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
+
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
+
+    margin-bottom:40px;
+}
 .page-banner-resources{
 height:550px;
 background:
@@ -193,11 +255,18 @@ margin-top:0px;
 }
 
 .page-banner-resources h1{
-font-family:'Poppins', sans-serif;
-font-size:56px;
-font-weight:600;
-letter-spacing:1px;
-text-shadow:0 4px 12px rgba(0,0,0,0.5);
+    font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
+
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
+
+    margin-bottom:40px;
 }
 
 .page-banner-corevalues{
@@ -227,7 +296,21 @@ font-family: Georgia, serif;
 margin-top:0px;
 
 }
+.page-banner-contact h1{
+        font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
 
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
+
+    margin-bottom:40px;
+
+}
 .page-banner-resedential{
 height:550px;
 background:
@@ -240,6 +323,20 @@ color:white;
 font-size: 24px;
 font-family: Georgia, serif;
 margin-top:0px;
+}
+.page-banner-resedential h1{
+    font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
+
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
+
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
+
+    margin-bottom:40px;
 }
 .mission-hero{
      background: #f2f4f7;
@@ -692,13 +789,20 @@ text-shadow:0 3px 10px rgba(0,0,0,0.6);
 transition:transform 0.3s ease;
 }
 
+.page-banner-corevalues h1{
+     font-family:'Playfair Display', serif;
+    font-size:56px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    color:white;
 
+    text-shadow:0 4px 12px rgba(0,0,0,0.6);
 
+    border-left:5px solid #4da6ff;
+    padding-left:18px;
 
-
-
-
-
+    margin-bottom:40px;
+}
 
 
 
