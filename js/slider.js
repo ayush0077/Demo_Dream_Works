@@ -48,3 +48,32 @@ slider.addEventListener("mouseleave", startSlider);
 /* START SLIDER */
 
 startSlider();
+
+/* ---------------------- */
+/* MOBILE SWIPE SUPPORT */
+/* ---------------------- */
+
+let startX = 0;
+let endX = 0;
+
+slider.addEventListener("touchstart", function(e){
+    startX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchmove", function(e){
+    endX = e.touches[0].clientX;
+});
+
+slider.addEventListener("touchend", function(){
+
+    let diff = startX - endX;
+
+    if(diff > 50){
+        nextSlide();   // swipe left
+    }
+
+    if(diff < -50){
+        prevSlide();   // swipe right
+    }
+
+});
