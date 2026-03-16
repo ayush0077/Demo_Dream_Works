@@ -9,6 +9,8 @@ console.log("Navbar elements not found");
 return;
 }
 
+/* MENU TOGGLE */
+
 toggle.onclick = function(){
 nav.classList.toggle("active");
 overlay.classList.toggle("active");
@@ -19,18 +21,27 @@ nav.classList.remove("active");
 overlay.classList.remove("active");
 };
 
-}
-
-/* Wait until navbar loads */
-setTimeout(initMobileMenu, 300);
+/* DROPDOWNS */
 
 const dropdowns = document.querySelectorAll(".dropdown > a");
 
 dropdowns.forEach(drop => {
+
 drop.addEventListener("click", function(e){
+
 if(window.innerWidth <= 768){
+
 e.preventDefault();
 this.parentElement.classList.toggle("active");
+
 }
+
 });
+
 });
+
+}
+
+/* Wait until navbar loads */
+
+setTimeout(initMobileMenu, 300);
