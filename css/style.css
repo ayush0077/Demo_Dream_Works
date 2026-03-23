@@ -529,8 +529,14 @@ margin-top:0px;
     padding:80px 40px;
     text-align:center;
     
+    
 }
-
+.services.consulting-services{
+     background:#e8f3ff; 
+}
+body.dark-mode .services.consulting-services{
+    background:#0b0f19;   /* deep dark */
+}
 .service-container{
     display:flex;
     justify-content:center;
@@ -1096,15 +1102,15 @@ border:0;
 }
 
 .hero-slider{
-    padding:40px 10%;
+    padding:0;
 }
 
 .slider-container{
     position:relative;
-      height:65vh;
+    height:90vh;
     width: 100%;
     overflow:hidden;
-    border-radius:10px;
+     border-radius:0; 
        margin:0 auto;
 }
 
@@ -1707,9 +1713,113 @@ border-bottom:1px solid rgba(255,255,255,0.05);
 body.dark-mode .nav-links a{
 color:#e4e4e4;
 }
+body.dark-mode .project-modal{
+    background:rgba(0,0,0,0.85);
+}
+body.dark-mode .modal-content{
+    background:#0d0f14;
+    color:#e5e7eb;
+}
+body.dark-mode .modal-right h2{
+    color:#ffffff;
+}
 
+body.dark-mode .modal-right p{
+    color:#cbd5e1;
+}
+body.dark-mode .modal-right button{
+    background:#1f86c7;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+body.dark-mode .modal-right button:hover{
+    background:#166aa1;
+}
 /* hero */
+body.dark-mode .team-section{
+    background:#0d0f14;
+}
+body.dark-mode .team-section h1{
+    color:#ffffff;
+}
+body.dark-mode .team-card{
+    background:#161b22;   /* dark card */
+    box-shadow:0 10px 30px rgba(0,0,0,0.7);
+}
+body.dark-mode .contact-section{
+    background:#0d0f14;
+}
+body.dark-mode .contact-text{
+    color:#9ca3af;
+}
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea{
+    background:transparent;
+    border-bottom:1px solid #374151;
+    color:#e5e7eb;
+}
 
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder{
+    color:#6b7280;
+}
+body.dark-mode .contact-form label{
+    color:#e5e7eb;
+}
+body.dark-mode .contact-form button{
+    background:#1f86c7;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px 20px;
+}
+
+body.dark-mode .contact-form button:hover{
+    background:#166aa1;
+}
+body.dark-mode .contact-info{
+    background:#161b22;   /* dark card */
+    color:#e5e7eb;
+    border:1px solid rgba(255,255,255,0.05);
+}
+body.dark-mode .contact-info h4{
+    color:#ffffff;
+}
+
+body.dark-mode .contact-info p{
+    color:#9ca3af;
+}
+body.dark-mode .contact-info a{
+    color:#cbd5e1;
+}
+
+body.dark-mode .contact-info a:hover{
+    color:#60a5fa;
+}
+body.dark-mode .contact-info i{
+    color:#60a5fa;
+}
+body.dark-mode .team-info h3{
+    color:#ffffff;
+}
+
+body.dark-mode .team-info p{
+    color:#9ca3af;
+}
+body.dark-mode .team-contact a{
+    color:#cbd5e1;
+}
+
+body.dark-mode .team-contact a:hover{
+    color:#60a5fa;
+}
+body.dark-mode .team-card img{
+    border:4px solid #1f2937;
+}
 body.dark-mode .hero{
 background:#1b1b1b;
 }
@@ -1717,13 +1827,21 @@ background:#1b1b1b;
 body.dark-mode .hero p{
 color:#bbb;
 }
-
+body.dark-mode .mission-hero{
+    background:#1a2225;
+}
 /* cards */
 
 body.dark-mode .service-card{
 box-shadow:0 10px 25px rgba(0,0,0,0.6);
 }
-
+body.dark-mode .mission-hero strong{
+    color:#ffffff;   /* makes Vision & Mission white */
+    font-weight:600;
+}
+body.dark-mode .strategy-list{
+    color:#cbd5e1;
+}
 /* footer */
 
 body.dark-mode .footer{
