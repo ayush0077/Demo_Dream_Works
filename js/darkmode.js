@@ -1,7 +1,10 @@
 /* APPLY SAVED THEME */
 
-if(localStorage.getItem("theme") === "dark"){
-document.body.classList.add("dark-mode");
+if(localStorage.getItem("theme") === "light"){
+    document.body.classList.remove("dark-mode");
+} else {
+    // default = dark
+    document.body.classList.add("dark-mode");
 }
 
 /* WAIT FOR NAVBAR TO LOAD */

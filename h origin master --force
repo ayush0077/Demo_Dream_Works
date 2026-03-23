@@ -1,0 +1,300 @@
+[33mcommit 143b18cfdb38d06cb4d70a7a1da02dd05e49dfdd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:49:00 2026 +0545
+
+    done
+
+ .gitignore | 1 [31m-[m
+ git        | 0
+ 2 files changed, 1 deletion(-)
+
+[33mcommit 940e3fc9e0031b8aea50c030e901458e1e65f30c[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:43:57 2026 +0545
+
+    Removed broken LFS file
+
+ .gitignore | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+[33mcommit 1967a0c98d0d8a864551558ba69bb0ebeaac8108[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:41:01 2026 +0545
+
+    Ignore PDF files
+
+ .gitignore        | 1 [32m+[m
+ pages/navbar.html | 2 [32m+[m[31m-[m
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+[33mcommit aa4a04591be59ecebb1228e9485a2b935f96a9df[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:35:05 2026 +0545
+
+    Add PDF with LFS
+
+ .gitattributes | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+
+[33mcommit 40ffcd405126a9a8f5077fd8f176aeef17b688be[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:32:38 2026 +0545
+
+    done and dusted
+
+ pages/navbar.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 4427bad95244a1cdae090cecdcbeadc3ca40d4c6[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Wed Mar 18 22:31:28 2026 +0545
+
+    all done
+
+ index.html | 3 [32m+++[m
+ 1 file changed, 3 insertions(+)
+
+[33mcommit dfa870ede9f10b4a6749e60c6df414968086b31e[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 22:11:22 2026 +0545
+
+    changes
+
+ css/style.css                                 | 89 [32m+++++++++++++++++++++++++++[m
+ index.html                                    |  1 [32m+[m
+ js/darkmode.js                                | 23 [32m+++++++[m
+ pages/contact.html                            |  1 [32m+[m
+ pages/core_values.html                        |  1 [32m+[m
+ pages/gallery.html                            |  1 [32m+[m
+ pages/mission.html                            |  1 [32m+[m
+ pages/navbar.html                             |  7 [32m++[m[31m-[m
+ pages/objectives.html                         |  1 [32m+[m
+ pages/projects/Apartment Design.html          |  1 [32m+[m
+ pages/projects/Commercial Complex.html        |  1 [32m+[m
+ pages/projects/Hospital.html                  |  1 [32m+[m
+ pages/projects/Hotel & Restaurant Design.html |  1 [32m+[m
+ pages/projects/Interior Design.html           |  1 [32m+[m
+ pages/projects/Park & Landscape Design.html   |  1 [32m+[m
+ pages/projects/Residential_Projects.html      |  1 [32m+[m
+ pages/resources.html                          |  1 [32m+[m
+ pages/team.html                               |  1 [32m+[m
+ 18 files changed, 132 insertions(+), 2 deletions(-)
+
+[33mcommit 12a3b2e6a880399702aa47f3c3321533478b79c9[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 21:49:31 2026 +0545
+
+    changes
+
+ pages/projects/Residential_Projects.html | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 271b82a1752c94ae40a5d67a65e3ec1886169691[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 21:46:42 2026 +0545
+
+    changes
+
+ css/style.css     | 149 [32m++++++++++++++++++++++++++++++++++++++++++[m[31m------------[m
+ index.html        |  12 [32m++[m[31m---[m
+ js/mobile_menu.js |  21 [32m++++++[m[31m--[m
+ js/slider.js      |  31 [32m+++++++++++[m[31m-[m
+ 4 files changed, 169 insertions(+), 44 deletions(-)
+
+[33mcommit 6d18a77eaadc9ee710c742c1530a42c111480d71[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 16:53:48 2026 +0545
+
+    last update before
+
+ css/style.css                                 | 153 [32m++++++++++++++++++++++++++[m
+ images/jayat.jpeg                             | Bin [31m0[m -> [32m1171396[m bytes
+ index.html                                    |   1 [32m+[m
+ js/mobile_menu.js                             |  36 [32m++++++[m
+ pages/contact.html                            |   1 [32m+[m
+ pages/core_values.html                        |   1 [32m+[m
+ pages/gallery.html                            |   1 [32m+[m
+ pages/mission.html                            |   1 [32m+[m
+ pages/navbar.html                             |  51 [32m+++++++[m[31m--[m
+ pages/objectives.html                         |   1 [32m+[m
+ pages/projects/Apartment Design.html          |   2 [32m+[m[31m-[m
+ pages/projects/Commercial Complex.html        |   2 [32m+[m[31m-[m
+ pages/projects/Hospital.html                  |   2 [32m+[m[31m-[m
+ pages/projects/Hotel & Restaurant Design.html |   2 [32m+[m[31m-[m
+ pages/projects/Interior Design.html           |   1 [32m+[m
+ pages/projects/Park & Landscape Design.html   |   2 [32m+[m[31m-[m
+ pages/projects/Residential_Projects.html      |   2 [32m+[m[31m-[m
+ pages/resources.html                          |   1 [32m+[m
+ pages/team.html                               |  20 [32m++++[m
+ 19 files changed, 263 insertions(+), 17 deletions(-)
+
+[33mcommit 5b0bcf217845d43f4343d5988f6e774e77984131[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 14:16:46 2026 +0545
+
+    last update before
+
+ css/style.css          | 133 [32m+++++++++++++++++++++++++++++++++++++++++++[m[31m------[m
+ index.html             |  13 [32m++[m[31m---[m
+ js/scroll-reveal.js    |  25 [32m++++++++++[m
+ pages/contact.html     |   1 [32m+[m
+ pages/core_values.html |   1 [32m+[m
+ pages/mission.html     |   1 [32m+[m
+ pages/objectives.html  |   1 [32m+[m
+ pages/resources.html   |   1 [32m+[m
+ 8 files changed, 155 insertions(+), 21 deletions(-)
+
+[33mcommit aa4232cc0f1bad4b67999cc82faba36b90e957a5[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Mon Mar 16 11:49:10 2026 +0545
+
+    last update beforechanges
+
+ css/style.css      | 126 [32m++++++++++++++++++++++++++++++++++++++++++++++++[m[31m-----[m
+ index.html         |   1 [32m+[m
+ pages/mission.html |   2 [32m+[m[31m-[m
+ 3 files changed, 117 insertions(+), 12 deletions(-)
+
+[33mcommit e2dc6d1adbccb0248c04b70b518d7b43bfab6441[m
+Author: ayush0077 <ayush.tamrakar.90@gmail.com>
+Date:   Sun Mar 15 16:43:55 2026 +0545
+
+    css stylying
+
+ css/style.css                                      |  24 [32m+[m[31m-[m
+ images/APPARTMENT/LARGE/10-480x270.jpg             | Bin [31m0[m -> [32m42144[m bytes
+ images/APPARTMENT/{ => LARGE}/HATIIBAN.jpg         | Bin
+ .../2-1-1.jpg => APPARTMENT/LARGE/SITAPAILA.jpg}   | Bin
+ .../hospital5.jpg => HOSPITAL/BHAIRAHAWA.jpg}      | Bin
+ .../hospital2.jpg => HOSPITAL/BIRATNAGAR.jpg}      | Bin
+ images/HOSPITAL/BIRJUNG.jpg                        | Bin [31m0[m -> [32m68237[m bytes
+ .../hospital4.jpg => HOSPITAL/CHABAHEL.jpg}        | Bin
+ .../hospital3.jpg => HOSPITAL/NAWALPUR.jpg}        | Bin
+ .../{gallery/hospital.jpg => HOSPITAL/PYUTHAN.jpg} | Bin
+ images/HOTEL AND DESIGN/1.jpg                      | Bin [31m0[m -> [32m57497[m bytes
+ images/HOTEL AND DESIGN/2.jpg                      | Bin [31m0[m -> [32m44034[m bytes
+ images/HOTEL AND DESIGN/AIRPORTKATHMANDU.jpg       | Bin [31m0[m -> [32m89064[m bytes
+ images/HOTEL AND DESIGN/BASPANI.jpg                | Bin [31m0[m -> [32m64658[m bytes
+ images/HOTEL AND DESIGN/BUDHANILKHANTHA.jpg        | Bin [31m0[m -> [32m84168[m bytes
+ images/HOTEL AND DESIGN/CHOVAR.jpg                 | Bin [31m0[m -> [32m47275[m bytes
+ images/HOTEL AND DESIGN/DAHULIKHEL.jpg             | Bin [31m0[m -> [32m91443[m bytes
+ images/HOTEL AND DESIGN/DASDHUNGA.jpg              | Bin [31m0[m -> [32m75876[m bytes
+ images/HOTEL AND DESIGN/ITAHARI.jpg                | Bin [31m0[m -> [32m46522[m bytes
+ images/HOTEL AND DESIGN/JEETPURPHEDI.jpg           | Bin [31m0[m -> [32m88605[m bytes
+ images/HOTEL AND DESIGN/KAMALBINAYAK.jpg           | Bin [31m0[m -> [32m40554[m bytes
+ images/HOTEL AND DESIGN/NAGARKOT.jpg               | Bin [31m0[m -> [32m93219[m bytes
+ images/HOTEL AND DESIGN/NAXAL.jpg                  | Bin [31m0[m -> [32m91173[m bytes
+ images/HOTEL AND DESIGN/PASIKOT.jpg                | Bin [31m0[m -> [32m84471[m bytes
+ images/HOTEL AND DESIGN/SINAMANGAL.jpg             | Bin [31m0[m -> [32m55499[m bytes
+ images/Interior/AIRPORTKATHMANDU.jpg               | Bin [31m0[m -> [32m42782[m bytes
+ images/Interior/AT.jpg                             | Bin [31m0[m -> [32m49617[m bytes
+ images/Interior/BANESWOR.jpg                       | Bin [31m0[m -> [32m45329[m bytes
+ images/Interior/BASUNDHARA.jpg                     | Bin [31m0[m -> [32m39224[m bytes
+ images/Interior/BHANGAL.jpg                        | Bin [31m0[m -> [32m49780[m bytes
+ images/Interior/BIRATNAGAR.jpg                     | Bin [31m0[m -> [32m49088[m bytes
+ images/Interior/BUTWAL.jpg                         | Bin [31m0[m -> [32m60988[m bytes
+ images/Interior/GAUSALA.jpg                        | Bin [31m0[m -> [32m51489[m bytes
+ images/Interior/GOTHATAR.jpg                       | Bin [31m0[m -> [32m37823[m bytes
+ images/Interior/JADIBUTI.jpg                       | Bin [31m0[m -> [32m44052[m bytes
+ images/Interior/JANAKPUR.jpg                       | Bin [31m0[m -> [32m46826[m bytes
+ images/Interior/MINBHAWAN.jpg                      | Bin [31m0[m -> [32m51489[m bytes
+ images/Interior/NAGARKOT.jpg                       | Bin [31m0[m -> [32m57990[m bytes
+ images/Interior/NAXAL.jpg                          | Bin [31m0[m -> [32m67458[m bytes
+ images/Interior/PALPA.jpg                          | Bin [31m0[m -> [32m48504[m bytes
+ images/Interior/POKHARA.jpg                        | Bin [31m0[m -> [32m57302[m bytes
+ images/Interior/PUTALISADAK.jpg                    | Bin [31m0[m -> [32m49559[m bytes
+ images/Interior/{sainama.jpg => SAINAMAINA.jpg}    | Bin
+ images/Interior/SANKHAMUL.jpg                      | Bin [31m0[m -> [32m51008[m bytes
+ images/Interior/SIMARA.jpg                         | Bin [31m0[m -> [32m57614[m bytes
+ images/Interior/SIMARASARLAHI.jpg                  | Bin [31m0[m -> [32m65421[m bytes
+ images/Interior/SURKHET.jpg                        | Bin [31m0[m -> [32m49712[m bytes
+ images/Interior/THAMEL.jpg                         | Bin [31m0[m -> [32m40781[m bytes
+ images/Interior/TIKAPUR.jpg                        | Bin [31m0[m -> [32m55703[m bytes
+ images/Interior/TOKHA.jpg                          | Bin [31m0[m -> [32m46962[m bytes
+ images/PARK/BODE.jpg                               | Bin [31m0[m -> [32m92600[m bytes
+ images/PARK/PARBAT.jpg                             | Bin [31m0[m -> [32m78859[m bytes
+ images/PARK/RAUTAHAT.jpg                           | Bin [31m0[m -> [32m95586[m bytes
+ images/PARK/SATUNGAL.jpg                           | Bin [31m0[m -> [32m88583[m bytes
+ images/banner.png                                  | Bin [31m0[m -> [32m3304906[m bytes
+ images/cOMMERICAL/LARGE/AT.jpg                     | Bin [31m0[m -> [32m88375[m bytes
+ images/cOMMERICAL/LARGE/BALUWATAR.jpg              | Bin [31m0[m -> [32m122080[m bytes
+ images/cOMMERICAL/LARGE/BARDIBAS.jpg               | Bin [31m0[m -> [32m74724[m bytes
+ images/cOMMERICAL/LARGE/CHAPAKOT.jpg               | Bin [31m0[m -> [32m52010[m bytes
+ images/cOMMERICAL/LARGE/LAMKI.jpg                  | Bin [31m0[m -> [32m63836[m bytes
+ images/cOMMERICAL/LARGE/NUWAKOT.jpg                | Bin [31m0[m -> [32m42252[m bytes
+ images/cOMMERICAL/LARGE/POKHARA.jpg                | Bin [31m0[m -> [32m55952[m bytes
+ images/cOMMERICAL/LARGE/RUPANDEHI.jpg              | Bin [31m0[m -> [32m95888[m bytes
+ images/gallery/15.jpg                              | Bin [31m22106[m -> [32m0[m bytes
+ images/gallery/16.jpg                              | Bin [31m41152[m -> [32m0[m bytes
+ images/gallery/17.jpg                              | Bin [31m38099[m -> [32m0[m bytes
+ images/gallery/18.jpg                              | Bin [31m29498[m -> [32m0[m bytes
+ images/gallery/19.jpg                              | Bin [31m32212[m -> [32m0[m bytes
+ images/gallery/20.jpg                              | Bin [31m29263[m -> [32m0[m bytes
+ images/gallery/21.jpg                              | Bin [31m19644[m -> [32m0[m bytes
+ images/gallery/22.jpg                              | Bin [31m47926[m -> [32m0[m bytes
+ images/gallery/23.jpg                              | Bin [31m43878[m -> [32m0[m bytes
+ images/gallery/24.jpg                              | Bin [31m26276[m -> [32m0[m bytes
+ images/gallery/25.jpg                              | Bin [31m33979[m -> [32m0[m bytes
+ images/gallery/26.jpg                              | Bin [31m33785[m -> [32m0[m bytes
+ images/gallery/27.jpg                              | Bin [31m25733[m -> [32m0[m bytes
+ images/gallery/28.jpg                              | Bin [31m27386[m -> [32m0[m bytes
+ images/gallery/29.jpg                              | Bin [31m25173[m -> [32m0[m bytes
+ images/gallery/30.jpg                              | Bin [31m35346[m -> [32m0[m bytes
+ images/gallery/31.jpg                              | Bin [31m24261[m -> [32m0[m bytes
+ images/gallery/32.jpg                              | Bin [31m40265[m -> [32m0[m bytes
+ images/gallery/33.jpg                              | Bin [31m27312[m -> [32m0[m bytes
+ images/gallery/34.jpg                              | Bin [31m25332[m -> [32m0[m bytes
+ images/gallery/35.jpg                              | Bin [31m40872[m -> [32m0[m bytes
+ images/gallery/36.jpg                              | Bin [31m30584[m -> [32m0[m bytes
+ images/gallery/37.jpg                              | Bin [31m44147[m -> [32m0[m bytes
+ images/gallery/38.jpg                              | Bin [31m43214[m -> [32m0[m bytes
+ images/gallery/39.jpg                              | Bin [31m34453[m -> [32m0[m bytes
+ images/gallery/40.jpg                              | Bin [31m35204[m -> [32m0[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY.jpg      | Bin [31m0[m -> [32m102702[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_0.jpg    | Bin [31m0[m -> [32m68343[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_1.jpg    | Bin [31m0[m -> [32m58516[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_10.jpg   | Bin [31m0[m -> [32m74724[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_11.jpg   | Bin [31m0[m -> [32m95888[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_12.jpg   | Bin [31m0[m -> [32m42252[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_13.jpg   | Bin [31m0[m -> [32m63836[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_14.jpg   | Bin [31m0[m -> [32m52010[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_15.jpg   | Bin [31m0[m -> [32m122080[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_16.jpg   | Bin [31m0[m -> [32m80966[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_17.jpg   | Bin [31m0[m -> [32m188261[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_18.jpg   | Bin [31m0[m -> [32m109059[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_19.jpg   | Bin [31m0[m -> [32m96423[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_2.jpg    | Bin [31m0[m -> [32m73096[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_20.jpg   | Bin [31m0[m -> [32m59102[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_21.jpg   | Bin [31m0[m -> [32m53453[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_22.jpg   | Bin [31m0[m -> [32m81073[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_23.jpg   | Bin [31m0[m -> [32m60598[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_24.jpg   | Bin [31m0[m -> [32m78141[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_25.jpg   | Bin [31m0[m -> [32m60789[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_26.jpg   | Bin [31m0[m -> [32m116718[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_27.jpg   | Bin [31m0[m -> [32m67544[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_28.jpg   | Bin [31m0[m -> [32m107030[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_29.jpg   | Bin [31m0[m -> [32m102702[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_3.jpg    | Bin [31m0[m -> [32m70076[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_4.jpg    | Bin [31m0[m -> [32m64480[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_5.jpg    | Bin [31m0[m -> [32m68237[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_6.jpg    | Bin [31m0[m -> [32m105321[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_7.jpg    | Bin [31m0[m -> [32m55030[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_8.jpg    | Bin [31m0[m -> [32m88375[m bytes
+ images/gallery/IMPORTED_FROM_MEDIA_LIBRAY_9.jpg    | Bin [31m0[m -> [32m55952[m bytes
+ images/quotation for biratnagar.docx               | Bin [31m0[m -> [32m73277[m bytes
+ .../{BUTWAL-2.jpg => BAGDOL-4, LALITPUR.jpg}       | Bin
+ .../photo_webscrapping-checkpoint.ipynb            |   6 [32m+[m
+ images/resdential/Large/BAGDOL-4, LALITPUR.jpg     | Bin [31m0[m -> [32m59102[m bytes
+ images/resdential/Large/BARRAKOTE, SYANGJA.jpg     | Bin [31m0[m -> [32m84541[m bytes
+ images/resdential/Large/BHANGAL.jpg                | Bin [31m0[m -> [32m82122[m bytes
+ images/resdential/Large/BIRATNAGAR.jpg             | Bin [31m0[m -> [32m59188[m bytes
+ images/resdential/Large/BODE.jpg                   | Bin [31m0[m -> [32m53453[m bytes
+ images/resdential/Large/BOHORATAR.jpg              | Bin [31m0[m -> [32m109059[m bytes
+ images/resdential/Large/BUDHANILKHANTHA-2.jpg      | Bin [31m0[m -> [32m71187[m bytes
+ images/resdential/Large/BUDHANILKHANTHA-4.jpg      | Bin [31m0[m -> [32m96423[m bytes
+ images/resdential/Large/BUDHANILKHANTHA-6.jpg      | Bin [31m0[m -> [32m106439[m bytes
+ images/resdential/Large/BUTAWAL.jpg                | Bin [31m0[m -> [32m7927[m bytes
+ images/resdential/Large/CHANDAGIRI.jpg             | Bin [31m0[m -> [32m80966[m bytes
+ images/resdential/Large/CHAPAKOT, SYANGJA.jpg      | Bin [31m0[m -> [32m77133[m bytes
+ images/resdential/Large/DANG.jpg                   | Bin [31m0[m -> [32m46996[m bytes
+ images/resdential/Large/DHAPAKHEL-28.jpg           | Bin [31m0[m -> 
