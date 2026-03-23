@@ -1894,5 +1894,29 @@ color:#333;
 .dark-toggle{
 display:none;
 }
+body.dark-mode .nav-links{
+    background:#121212 !important;
+    color:#ffffff;
+}
+body.dark-mode .nav-links{
+    background:#121212 !important;
+    color:#ffffff;
+}
+body.dark-mode .nav-links li{
+    border-bottom:1px solid #222;
+}
+body.dark-mode .nav-links a:hover{
+    color:#0a84ff;
+}
+body.dark-mode .nav-links a:hover{
+    background:rgba(255,255,255,0.05);
+    border-radius:6px;
+}
+    .dropdown-menu{
+        display:none;
+    }
 
+    .dropdown.active .dropdown-menu{
+        display:block;
+    }
 }
