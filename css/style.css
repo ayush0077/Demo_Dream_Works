@@ -479,7 +479,10 @@ margin-top:0px;
 .team-info{
     padding:15px;
 }
-
+.team-info a {
+    text-decoration: none;
+    color: inherit;
+}
 .team-info h3{
     font-size:16px;
     margin-bottom:5px;
