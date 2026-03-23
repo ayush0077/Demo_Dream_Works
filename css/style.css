@@ -1757,8 +1757,8 @@ cursor:pointer;
 color:#333;
 }
 
-body.dark-mode .dark-toggle{
-color:#fff;
+html.dark-mode .dark-toggle{
+color:#111;
 }
 .dark-toggle{
 background:none;
