@@ -1,26 +1,22 @@
 /* APPLY SAVED THEME */
 
-if(localStorage.getItem("theme") === "light"){
-    document.body.classList.remove("dark-mode");
-} else {
-    // default = dark
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
+} else {
+    document.body.classList.remove("dark-mode"); // default = light
 }
 
-/* WAIT FOR NAVBAR TO LOAD */
+/* TOGGLE */
 
 document.addEventListener("click", function(e){
 
-if(e.target.closest(".dark-toggle")){
+    if(e.target.closest(".dark-toggle")){
 
-document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.toggle("dark-mode");
 
-if(document.body.classList.contains("dark-mode")){
-localStorage.setItem("theme","dark");
-}else{
-localStorage.setItem("theme","light");
-}
-
-}
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
 
 });
